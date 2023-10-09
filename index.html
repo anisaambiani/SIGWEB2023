@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+        body {font-size:16px;}
+        .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+        .w3-half img:hover{opacity:1}
+        #customers {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 4px;
+        }
+        
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+        
+        #customers tr:hover {background-color: #ddd;}
+        
+        #customers th {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          text-align: center;
+          background-color: #c04425;
+          color: white;
+        }
+
+        html   {scroll-behavior: smooth;}
+        #map {
+        width: 1000px;
+        height: 500px;
+        margin-left: 5px;
+        }
+
+        body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+        body {font-size:16px;}
+        .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+        .w3-half img:hover{opacity:1}
+        
+        #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+        </style>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Anisa Putri Ambiani</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.mi
+        n.js" integrity="sha384-
+        ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Anisa Putri Ambiani</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpeg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Link Teknik Geodesi UGM</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Nama dan NIM</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Formulir</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Peta Sebaran Tempat Favorit di UGM</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        anisa
+                        <span class="text-primary">ambiani</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Gamping · Sleman, Yogyakarta 55293 · 088227268672 ·
+                        <a href="mailto:name@email.com">anisaputri2020@mail.ugm.ac.id</a>
+                    </div>
+                    <p class="lead mb-5">Website ini merupakan hasil dari Ujian Tengah Semester untuk Mata Kuliah Praktikum SIG Berbasis WEB</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/anisaambiani/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/anisaambiani"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://instagram.com/anisaambianii?utm_source=qr&igshid=MThlNWY1MzQwNA=="><i class="fab fa-instagram"></i></a>
+                        <a class="social-icon" href="https://wa.me/088227268672"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Link Teknik Geodesi UGM</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Berikut merupakan Link Teknik Geodesi UGM</h3>
+                            <a href="https://geodesi.ugm.ac.id/">Link ini mengarah ke Website Teknik Geodesi</a>
+                            <p><i>Link tersebut dapat diakses secara umum untuk mendapatkan informasi terbaru mengenai berbagai kegiatan di </i> <b>Teknik Geodesi UGM</b>
+                        </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Informasi Penulis</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Nama dan NIM</h3>
+                            <div class="subheading mb-3">Berikut Merupakan informasi nama dan NIM Penulis</div>
+                            <hr style="width:50px;border:5px solid rgb(0, 0, 0)" class="w3-round">
+                       <!-- Tabel -->
+                       <div class="w3-row-padding">
+                        <div class="w3-half">
+                        <table id="customers">
+                            <tr>
+                            <th>Nama</th>
+                            <th>NIM</th>
+                            </tr>
+                            <tr>
+                            <td>Anisa Putri Ambiani</td>
+                            <td>20/456139/TK/50269</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Organizational Experience-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Formulir</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Validasi Pekerjaan</h3>
+                            <p>Selamat! Pekerjaan Anda telah selesai. Masukkan informasi berikut : </p>
+                                Nama     : <input type="text" id="nama" style="margin-left: 34px; margin-bottom: 10px;"> <br>
+                                Password : <input type="password" id="pass" style="margin-left: 10px; margin-bottom: 10px"> <br>
+                                E-mail: <input type="email" id="email" style="margin-left: 32px; margin-bottom: 10px"> <br>
+
+                                <button onclick="klik()">Klik</button>
+
+                                <script>
+                                    function klik(){
+                                        var pw, check, txt;
+                                        var check = "Selesai";
+                                        pw = document.getElementById("pass").value;
+
+                                        if (pw === check) {
+                                            txt = "Password benar!";
+                                            alert(txt);
+                                        }
+
+                                        else{
+                                            txt = "error!";
+                                            alert(txt);
+                                        }
+                                    }
+                                </script>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Peta Sebaran Tempat Favorit di UGM</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div>Berikut merupakan sebaran tempat favorit yang dapat ditemukan di Lingkungan UGM</div>
+                        </div>
+                    </div>
+                    <div id="map"></div>
+                    <script src="jogja.js"></script>
+                    <script>
+                    var tamanIcon = L.icon({
+                        iconUrl: 'https://cdn-icons-png.flaticon.com/256/532/532988.png',
+                        iconSize:     [37, 37], // size of the icon
+                        iconAnchor:   [20, 40], // point of the icon which will correspond to marker's location
+                        popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+                    });
+                    var perpusIcon = L.icon({
+                        iconUrl: 'https://cdn-icons-png.flaticon.com/256/999/999663.png',
+                        iconSize:     [37, 37], // size of the icon
+                        iconAnchor:   [20, 40], // point of the icon which will correspond to marker's location
+                        popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+                    });
+                    var tamankearifan   = L.marker([-7.775133241311042, 110.38044803555074], {icon: tamanIcon}).bindPopup('Taman Kearifan UGM'),
+                        wisdompark      = L.marker([-7.770296471490133, 110.38200371678829], {icon: tamanIcon}).bindPopup('Wisdom Park UGM'),
+                        tamanfaperta    = L.marker([-7.767247507227868, 110.38164860858429], {icon: tamanIcon}).bindPopup('Taman Faperta UGM'),
+                        tamanBI         = L.marker([-7.77087078779732, 110.38021264905576], {icon: tamanIcon}).bindPopup('Taman BI UGM'),
+                        lappancasila    = L.marker([-7.771041804135271, 110.37742310397886], {icon: tamanIcon}).bindPopup('Lapangan Pancasila UGM');
+                    var taman = L.layerGroup([tamankearifan, wisdompark, tamanfaperta, tamanBI, lappancasila]);
+                    var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 17,
+                        attribution: '© OpenStreetMap'
+                    });
+            
+                    var osmHOT = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                        maxZoom: 17,
+                        attribution: '© OpenStreetMap contributors, Tiles style by Humanitarian OpenStreetMap Team hosted by OpenStreetMap France'});
+            
+                    var map = L.map('map', {
+                        center: [-7.771041804135271, 110.37742310397886],
+                        zoom: 15,
+                        layers: [osm, taman]
+                    });
+            
+                    var baseMaps = {
+                        "OpenStreetMap": osm,
+                        "OpenStreetMap.HOT": osmHOT
+                    };
+            
+                    var overlayMaps = {
+                        "Taman di UGM": taman
+                    };
+                    var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
+                    var baseMaps = {
+                        "OpenStreetMap": osm,
+                        "<span style='color: red'>OpenStreetMap.HOT</span>": osmHOT
+                    };
+                    var perpusat      = L.marker([-7.769257028475533, 110.37816299252928], {icon: perpusIcon}).bindPopup('Perpustakaan Pusat UGM');
+                        
+                    var perpus = L.layerGroup([perpusat]);
+                    var openTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19,
+                        attribution: 'Map data: © OpenStreetMap contributors, SRTM | Map style: © OpenTopoMap (CC-BY-SA)'
+                    });
+            
+                    layerControl.addBaseLayer(openTopoMap, "OpenTopoMap");
+                    layerControl.addOverlay(perpus, "Perpus di UGM");
+                   </script> 
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
